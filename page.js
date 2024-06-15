@@ -86,7 +86,7 @@ proporcion.addEventListener('click', () => {
 
 submit.addEventListener('click', (e) => {
     if(muestra.value != '' && n != ''){
-        failedM.classList.add('active')
+        failedM.classList.remove('active')
         let numbers = muestra.value.split(',');
         numbers = numbers.reduce((acumulador, valor) => acumulador + parseInt(valor), 0);
     
